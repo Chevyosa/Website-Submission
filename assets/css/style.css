@@ -55,7 +55,79 @@ label.logo{
     font-size: 25px;
 }
 
-.fotoartikel{
-    width: 768px;
-    height: 432px;
+.articleclass{
+    display: flex;
+    flex: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+
+    .fotoartikel{
+        width: 768px;
+        height: 432px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.aside{
+    display: flex;
+    flex: 0 0 300px;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: flex-end;
+  
+    .title{
+      font-weight: 500;
+    }
+}
+
+.Profil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+  
+.footerclass{
+    text-align: center;
+    height: 80px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .wrap>* {
+        margin: 10px; /* Mengurangi margin untuk menghemat ruang pada perangkat seluler */
+      }
+    
+      nav {
+        flex-direction: column; /* Mengubah arah navigasi menjadi tumpukan vertikal */
+        align-items: center; /* Pusatkan elemen navigasi */
+      }
+    
+      nav ul {
+        flex-direction: inline; /* Mengubah daftar navigasi menjadi tumpukan vertikal */
+      }
+    
+      nav ul li {
+        margin: 10px 10px; /* Mengurangi margin antara item navigasi */
+      }
+    
+      .logo {
+        text-align: center;
+      }
+
+      .articleclass {
+        padding: 20px; /* Mengatur padding artikel untuk tampilan seluler yang lebih baik */
+      }
+    
+      .fotoartikel {
+        width: 100%; /* Gambar mengisi lebar penuh layar */
+        height: auto; /* Menjaga aspek rasio gambar */
+      }
+    
+      .aside {
+        display: none;
+      }
 }
